@@ -28,7 +28,7 @@ int registro()// Função responsavel por registrar usuário no sistema
 	fprintf(file,"\nNome:");// Separa as informções por vírgula
 	fclose(file);// Fecha os arquivos 
 	
-	printf("Digite o nome pra cadastrar:");
+	printf("Digite o nome pra cadastrar:");// coletando informação do usuário
 	scanf("%s",nome);
 	
 	file = fopen(arquivo, "a");
@@ -39,7 +39,7 @@ int registro()// Função responsavel por registrar usuário no sistema
 	fprintf(file,"\nSobrenome:");
 	fclose(file);
 	
-	printf("Digite o sobrenome pra cadastrar:");
+	printf("Digite o sobrenome pra cadastrar:");// coletando informação do usuário
 	scanf("%s",sobrenome);
 	
 	file = fopen(arquivo, "a");
@@ -50,7 +50,7 @@ int registro()// Função responsavel por registrar usuário no sistema
 	fprintf(file,"\nCargo:");
 	fclose(file);
 	
-	printf("Digite o cargo pra cadastrar:");
+	printf("Digite o cargo pra cadastrar:");// coletando informação do usuário
 	scanf("%s",cargo);
 	
 	file = fopen(arquivo, "a");
@@ -58,7 +58,7 @@ int registro()// Função responsavel por registrar usuário no sistema
 	fprintf(file,"\n\n");
 	fclose(file);
 	
-	system("pause");
+	system("pause");//Pausar o sistema pro usuário pensar em que fazer
 	
 	
 	
@@ -71,7 +71,7 @@ int consulta()// Função responsavel por consultar informções do usuário
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o cpf que deseja consultar: \n");
+	printf("Digite o cpf que deseja consultar: \n");// coletando informação do usuário
 	scanf("%s",cpf);
 	
 	FILE*file;
@@ -97,7 +97,7 @@ int deletar()// Responsavel por deletar o usuário
 {
 	char cpf[40];
 	
-	printf("Digite o cpf do usário deseja deletar:\n");
+	printf("Digite o cpf do usário deseja deletar:\n");// coletando informação do usuário
 	scanf("%s",cpf);
 
 		
@@ -107,8 +107,8 @@ int deletar()// Responsavel por deletar o usuário
 	if(file == NULL)// Difere caso não ache o usuário
 	{
 		fclose(file);
-		printf("O usuário não encontrado\n");
-		system("pause");
+		printf("O usuário não encontrado\n");//  Informa o usuário
+		system("pause");// Pausa o sistema
 	}
 	
 	if(file != NULL)// Informa a exclusasão
@@ -135,7 +135,8 @@ int main()
 		printf("Escolha uma das opção:\n\n");
 		printf("\t1 - inserir nomes \n");
 		printf("\t2 - consultar nomes \n");
-		printf("\t3 - deletar nomes \n\n");
+		printf("\t3 - deletar nomes \n");
+		printf("\t4 - sair do menu\n\n ");
 		printf("opções:");// Fim do menu
 	
 		scanf("%d", &escolha);// Armazena a escolha do usuário
@@ -154,6 +155,11 @@ int main()
 		
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 		
 			default:
