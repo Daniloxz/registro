@@ -1,122 +1,204 @@
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body > header {
-    background-color: rgb(24, 21, 21);
-    padding: 16px 0;
-    color: #f5f6fa;
-}
-
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header li {
-    display: inline;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-left: 16px;
-}
-
-header li a {
-    color: #f5f6fa;
-    text-decoration: none;
-}
-
-.container {
-    width: 1366px;
-    margin: 0 auto;
-}
-
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article img {
-    /*height: 180px;*/
-    width: 100%;
-}
-
-.articles article {
-    width: 30%;
-}
-
-section {
-    padding: 16px 0;
-}
-
-section h2,
-.articles article {
-    margin-bottom: 16px;
-}
-
-.articles article h3{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
-
-.articles article a {
-    background-color: blue;
-    color: #fff;
-    padding: 8px;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.articles article a:hover {
-    text-decoration: underline;
-}
-
-.articles article p,
-.articles article a {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.articles article h3 {
-    font-size: 24px;
-}
-
-section h2 {
-    font-size: 32px
-}
-
-#sports {
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-#sports .articles article a {
-    background-color: #009432;
-}
-
-#economy {
-    background-color: rgba(221, 245, 3, 0.4);
-}
-
-#economy .articles article a {
-    background-color: rgba(255, 166, 0, 0.8);
-}
-
-#cine {
-    background-color: rgba(255, 0, 0, 0.6);
-}
-
-#cine .articles article a {
-    background-color: rgba(212, 215, 16, 0.8);
-}
-
-#tecno {
-    background-color: rgba(0, 0, 255, 0.4);
-}
-
-#tecno .articles article a {
-    background-color: rgba(0, 0, 255, 0.6);
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#sports" title="Ir para a seção de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#economy" title="Ir para a seção de notícias">Economia</a>
+                    </li>
+                    <li>
+                        <a href="#tecno" title="Ir para a seção de esportes">Tecnologia</a>
+                    </li>
+                    <li>
+                        <a href="#cine" title="Ir para a seção de notícias">Cinema</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="sports">
+        <div class="container">
+            <h2>Esportes</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Grande clássico na noite de hoje</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Noite do Superbowl</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Notícia sobre a NBA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Notícia sobre a NBA</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="economy">
+        <div class="container">
+            <h2>Economia</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/dolares.jpg" alt="Muitos dólares" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Dólar em alta de 0.50%</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Euro em queda de 0.40%</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
+                    <header>
+                        <time>13/07/2022 às 12:35</time>
+                    </header>
+                    <h3>Alta no preço do barril do petróleo</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="cine">
+        <div class="container">
+            <h2>Cinema</h2>
+            <div class="articles">
+                <article>
+                    <img src="./imagens/transferir.jpeg" alt="Besouro azul" />
+                    <header>
+                        <time>17/08/23 as 13:40</time>
+                    </header>
+                    <h3>Besouro azul sendo um sucesso</h3>
+                    <p>
+                        Besouro Azul pode não ter a fama de um Superman ou Batman, mas é um dos filmes mais esperados de 2023. Pelo menos, para os latinos - e o Brasil também está envolvido nessa história. Afinal, somos todos patriotas quando o assunto é Copa do Mundo ou atores brasileiros fazendo carreira em Hollywood. Então, por mais que Xolo Maridueña (Cobra Kai) seja o protagonista, bonito mesmo vai ser o povo vibrando pela estreia de Bruna Marquezine na DC.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="https://www.mundoconectado.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?width=910&height=568&format=webp&quality=91&imagick=uploads.mundoconectado.com.br/2023/08/21080809/mussum-o-films-912x569.jpg" alt="mussum, e seu filme premiado" />
+                    <header>
+                        <time>21/08/23 às 12h34</time>
+                    </header>
+                    <h3>Mussum, o Filmis vence o Festival de Cinema de Gramado</h3>
+                    <p>
+                        O Festival de Cinema de Gramado premiou neste último fim de semana Mussum, o Filmis, como o grande vencedor da categoria de Melhor Filme de uma das principais celebrações do cinema no Brasil. O ator Ailton Graça, responsável por representar o humorista no filme, também foi premiado.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="https://cdn.ome.lt/7GdT2IiwiQ5EBrffdMlZXD5FE88=/987x0/smart/uploads/conteudo/fotos/o-auto-da-compadecida-2-primeira-imagem-capa.jpg" alt="auto da Compadecida 2" />
+                    <header>
+                        <time>18.08.2023, ÀS 14H22</time>
+                    </header>
+                    <h3>O Auto da Compadecida 2 revela 1ª imagem de Chicó e João Grilo</h3>
+                    <p>
+                        A inesperada sequência de O Auto da Compadecida já está a todo vapor! Nesta sexta-feira (18), a Conspiração e a H2O Films revelaram a primeira imagem do longa dirigido por Guel Arraes e Flávia Lacerda, que traz João Grilo (Matheus Nachtergaele) e Chicó (Selton Mello) de volta a Taperoá.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="tecno">
+        <div class="container">
+            <h2>Tecnologia</h2>
+            <div class="articles">
+                <article>
+                    <img src="https://jpimg.com.br/uploads/2023/01/pix_0411202554-689x450.jpg" alt="novo país com pix" />
+                    <header>
+                        <time>21/08/2023 08h35 - Atualizado em 21/08/2023 10h09</time>
+                    </header>
+                    <h3>Estados Unidos adotam modelo de Pix com base na tecnologia brasileira</h3>
+                    <p>
+                        Os Estados Unidos adotaram com base na tecnologia brasileira o seu modelo de Pix. O CEO da C&M Software, Orli Machado, especialista em liquidação interbancária e que atua no setor financeiro do Brasil, acompanha a implementação do FedNow, o nome do Pix americano. “Assim como no Pix, será no FedNow. São muito mais baratos em comparação a outros meios de pagamento. Quando se fala em pagamento instantâneo, está envolvendo o tomador de dinheiro, o financiador e a liquidez da operação, que são três interessados”, comentou.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="https://files.tecnoblog.net/wp-content/uploads/2021/03/iphone-carregador-adaptador-tomada-2-1536x864.jpg" alt="novo carregador" />
+                    <header>
+                        <time>21/08/2023 às 12:35</time>
+                    </header>
+                    <h3>iPhone 15: Novo modelo deve assustar concorrentes e resolver problema com carregador; entenda</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+                <article>
+                    <img src="https://teg6.com/wp-content/uploads/2023/08/campanha-sony-playstation-5-2023-1120x570.jpg.webp" alt="campanhada Sony" />
+                    <header>
+                        <time>21/08/2023 às 12:35</time>
+                    </header>
+                    <h3>Sony promove campanha sobre paixão pelos games</h3>
+                    <p>
+                        Uma das companhias de tecnologia mais proeminentes do mundo, a Sony, deu início a uma nova campanha para entender os motivos que levam os fãs de videogame a jogar. Com isso, a página oficial da PlayStation está passando por uma renovação, apresentando para o seu público os principais motivos para aderir à nova geração de consoles da empresa encabeçada pelo PS5.
+                    </p>
+                    <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
